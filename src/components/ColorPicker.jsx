@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
+import './ColorPicker.css'
+
 export default function ColorPicker() {
     const [color, setColor] = useState('red')
 
@@ -12,7 +14,13 @@ export default function ColorPicker() {
             background: color,
             color: 'white'
           }}>
-            <h2>Count: 12</h2>
+            <div style={{
+                
+            }}>
+                <h2 style={{
+                    background: 'white'
+                }}>Count: 12</h2>
+            </div>
             <button onClick={() => setColor('red')}>Красный</button>
             <button onClick={() => setColor('blue')}>Синий</button>
             <button onClick={() => setColor('green')}>Зеленый</button>
