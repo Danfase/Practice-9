@@ -14,17 +14,12 @@ export default function ColorPicker() {
             background: color,
             color: 'white'
           }}>
-            <div style={{
-                
-            }}>
-                <h2 style={{
-                    background: 'white'
-                }}>Count: 12</h2>
-            </div>
+            <h2>Count: 12</h2>
             <button onClick={() => setColor('red')}>Красный</button>
             <button onClick={() => setColor('blue')}>Синий</button>
             <button onClick={() => setColor('green')}>Зеленый</button>
-      
-          </div>
+        </div>
+
+
     )
 }
